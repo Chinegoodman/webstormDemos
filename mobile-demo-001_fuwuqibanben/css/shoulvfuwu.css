@@ -1,0 +1,123 @@
+html{
+    font-size: 20px;
+}
+body{
+    width:18.75rem;
+    min-height:33.85rem;
+    margin:0 auto;
+    background-color: #F0F0F0;
+}
+#top{
+    width:18.75rem;
+    /*height:1.6rem;*/
+    padding-top:1.6rem;
+    border-bottom: 0.05rem solid #B2B2B2;
+    background-color: #F8F8F8;
+}
+.tops{
+    position: relative;
+    height:0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+    letter-spacing: -0.015rem;
+    font-weight:bold;
+}
+.tops>a{
+    position: absolute;
+    left:0.5rem;
+    bottom:0;
+    letter-spacing: 0;
+    color: #323232;
+    width:0.45rem;
+    height:0.8rem;
+}
+.tops>a img{
+    width:0.45rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+}
+.tops>p{
+    text-align: center;
+    color: #212121;
+}
+.shoulv_title{
+    width:18.75rem;
+    padding-top: 0.7rem;
+    overflow: hidden;
+}
+.shoulv_title li {
+    /*display: inline-block;*/
+    float: left;
+    width: 4.6875rem;
+    height: 2.2rem;
+    font-size: 0.7rem;
+    line-height: 2.2rem;
+    color: #424242;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.shoulv_title li p{
+    width:1.3rem;
+    height:0.15rem;
+    background-color: #E63527;
+    position: absolute;
+    left:1.69375rem;
+    bottom:0;
+    display: none;
+}
+/*条块是否显示的设置*/
+.shoulv_title li .content_show{
+    display: block;
+}
+.shoulv_content{
+    width:17.75rem;
+    padding:0.5rem 0.5rem 0;
+    background-color: #F0F0F0;
+}
+.ul_samestyle{
+    width:17.75rem;
+    display: none;
+}
+.lvyou_hotel_li{
+    width:17.25rem;
+    height:3.2rem;
+    border:0.25rem solid #F8F8F8;
+    border-left-color: #FFCF00;
+    border-radius: 0.35rem;
+    background-color: #F8F8F8;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    padding-top: 0.8rem;
+}
+.lvyou_hotel_logo,.lvyou_hotel_detail,.lvyou_hotel_open{
+    float: left;
+}
+.lvyou_hotel_logo{
+    width:2.4rem;
+    height:2.4rem;
+    margin-right: 1.3rem;
+    margin-left: 1.1rem;
+    border-radius: 50%;
+}
+.lvyou_hotel_detail{
+    width:11.6rem;
+}
+.lvyou_hotel_detail p{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin-bottom: 0.3rem;
+}
+.lvyou_hotel_detail span{
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+    color: #7B7B7B;
+}
+.lvyou_hotel_open{
+    width:0.45rem;
+    height:0.8rem;
+    margin-top: 0.8rem;
+}
+.ul_show{
+    display: block;
+}

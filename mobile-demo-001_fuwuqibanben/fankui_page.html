@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>反馈</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fankui.css">
+    <script src="js/jq.js"></script>
+    <script>
+        window.onload=function () {
+            document.documentElement.style.fontSize=/*document.documentElement.clientWidth/18.75<17.067?17:*/document.documentElement.clientWidth/18.75+'px'
+            window.onresize=function () {
+                document.documentElement.style.fontSize=/*document.documentElement.clientWidth/18.75<17.067?17:*/document.documentElement.clientWidth/18.75+'px'
+            };
+        }
+    </script>
+</head>
+<body>
+<div id="top">
+    <div class="tops">
+        <a href="index.html"><img src="images/common_nav_icon_return_black.png" alt=""></a>
+        <p>反馈</p>
+    </div>
+</div>
+<div id="content">
+    <form action="">
+        <textarea name="" id="fankui_nr" cols="" rows="" placeholder="请详细描述您的问题或建议，我们将及时跟进解决。"></textarea>
+        <input class="fankui_person" type="text" placeholder="手机号/邮箱（选填，方便我们联系你）">
+        <p class="submit_btn">提交</p>
+    </form>
+</div>
+</body>
+</html>

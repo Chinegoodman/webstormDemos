@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>swiper测试</title>
+    <link rel="stylesheet" href="../swiper_official/swiper-3.3.1.min.css">
+    <style>
+        body{
+            background-color: #4D4E53;
+        }
+        .swiper-container{
+            background-color: #3FA339;
+            width:600px;
+            height:600px;
+        }
+        .swiper-slide2{
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 500px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+        <!--<div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">slide 1</div>
+                <div class="swiper-slide">slide 2</div>
+                <div class="swiper-slide">slide 3</div>
+                <div class="swiper-slide">slide 4</div>
+                <div class="swiper-slide">slide 5</div>
+
+            </div>
+          &lt;!&ndash;  分页器&ndash;&gt;
+            <div class="swiper-pagination">
+            </div>
+           &lt;!&ndash; 导航按钮&ndash;&gt;
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            &lt;!&ndash;滚动条&ndash;&gt;
+            <div class="swiper-scrollbar"></div>
+
+        </div>-->
+        <div class="swiper-container swiper-container_v">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">
+
+                    <div class="swiper-container swiper-container_h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide2" style="background-image:url(images/mobile1small.jpg)"> slide11111</div>
+                            <div class="swiper-slide swiper-slide2" style="background-image:url(images/mobile2small.jpg)"> slide22222</div>
+                            <div class="swiper-slide swiper-slide2" style="background-image:url(images/mobile3small.jpg)"> slide33333</div>
+                        </div>
+                        <!--<div class="swiper-pagination">
+
+                        </div>-->
+                        <!--<div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>-->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!--<div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            &lt;!&ndash; 如果需要滚动条 &ndash;&gt;
+            <div class="swiper-scrollbar"></div>-->
+        </div>
+
+<script src="jq.js"></script>
+<script src="../swiper_official/swiper-3.3.1.min.js"></script>
+<script>
+    /*$(function () {
+       /!* alert('宽'+$(window).offsetWidth+'加高度'+$(window).offsetHeight);*!/
+        document.write('高'+window.screen.height+'加宽度'+$(window).width());
+    })*/
+    $(function () {
+        var mySwiper=new Swiper('.swiper-container_v',{
+            direction:'vertical',
+            /*direction:'horizontal',*/
+            /*loop设置是否在后边添加第一个slide*/
+            /*loop:'true',*/
+            loop:'false',
+            /*分页器*/
+            pagination:'.swiper-pagination',
+            /*前进后退按钮*/
+            /*nextButton:'.swiper-button-next',
+            prevButton:'.swiper-button-prev',*/
+            /*滚动条*/
+            scrollbar:'.swiper-scrollbar',
+        })
+//        第二个水平动画
+        var mySwiper=new Swiper('.swiper-container_h',{
+            direction:'horizontal',
+            loop:'false',
+           /* pagination:'.swiper-pagination',
+            nextButton:'.swiper-button-next',
+            prevButton:'.swiper-button-prev',
+            scrollbar:'.swiper-scrollbar',*/
+
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true
+            }
+        });
+    })
+</script>
+</body>
+</html>

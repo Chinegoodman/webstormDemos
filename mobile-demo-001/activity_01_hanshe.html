@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>入住寒舍抽奖啦</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/activity_01hanshe.css">
+    <script src="js/jq.js"></script>
+</head>
+<body>
+    <div id="top">
+        <div class="tops">
+            <a href="index.html"><</a>
+            <p>入住寒舍抽奖啦</p>
+        </div>
+    </div>
+    <div id="content">
+        <div class="activity_firstshow">
+            <img src="activity_img/01.png" alt="">
+            <img src="activity_img/5.png" alt="">
+        </div>
+        <div class="activity_shows">
+            <div id="activity_hs_video_box">
+                <video  webkit-playsinline src="videos/1.mp4"  allowscriptaccess="always" id="activity_hs_video" width="auto" height="100%" poster="activity_img/beautifulpic.jpg">
+                    <!--  <source src="videos/1.mp4" type="video/mp4">
+                      <source src="videos/1.flv" type="video/flv">
+                      对不起，您的浏览器不支持video播放。-->
+                </video>
+                <div class="activity_video_controls">
+                    <div class="video_btns play_pause_btn"><img src="activity_img/play_pause_btn.png" alt=""></div>
+                    <div class="video_btns current_time"><span>0</span>:<span>00</span></div>
+                    <div class="video_btns video_wrap">
+                        <div class="pasttime_show">
+                            <div class="time_point"></div>
+                        </div>
+                    </div>
+                    <div class="video_btns video_lasttime"><span>0</span>:<span>00</span></div>
+                    <div class="video_btns voice_btn"><img src="activity_img/voice.png" alt=""></div>
+                </div>
+            </div>
+           
+            <div class="activity_all">
+                <img src="activity_img/4.png" alt="">
+                <div class="activity_fd">
+                    同样是<span>房东</span><br>
+                    他们会带着感恩与祝福<br>
+                    希望你度过美好的时光<br>
+                    不是交易<br>
+                    反而更加真诚
+                </div>
+                <img class="tututu2" src="activity_img/2.png" alt="">
+                <div class="activity_lj">
+                    同样是<span>邻居</span><br>
+                    这里的人更能让你感觉亲切<br>
+                    而非一墙之隔却形同陌路
+                </div>
+                <img class="tututu3" src="activity_img/7.png" alt="">
+                <p class="activity_last_title">活动说明</p>
+                <div class="activity_sm">
+                    <p>活动时间：2016.09.01——2016.09.10</p>
+                    <p>活动内容：刮开涂层，领取独属于您的鄞州寒舍专享码，<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更可通过专享码在鄞州寒舍活动现场进行抽奖</p>
+                    <p>活动官网地址：http://www.btg.com.cn/</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+<script>
+    window.onload=function () {
+        document.documentElement.style.fontSize=/*document.documentElement.clientWidth/18.75<17.067?17:*/document.documentElement.clientWidth/18.75+'px'
+        window.onresize=function () {
+            document.documentElement.style.fontSize=/*document.documentElement.clientWidth/18.75<17.067?17:*/document.documentElement.clientWidth/18.75+'px'
+        };
+    }
+
+
+  /* //自动适应屏幕
+   window.onresize=function(){
+       resetFont();
+   }
+   function resetFont(){
+       var HTML=document.getElementsByTagName('html')[0];
+       var ww=document.documentElement.clientWidth;
+       var scale=ww/375;//640为pds图的宽度
+       HTML.style.fontSize=20*scale+'px';
+   }
+   resetFont();*/
+</script>
+<script src="js/activity.js"></script>
+</html>

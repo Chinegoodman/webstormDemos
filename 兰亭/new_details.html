@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/news_details.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <div id="header" class="header">
+    <img src="images/lt_index_header_1.png" alt="">
+    <img src="images/lt_index_header_2.png" alt="">
+    <img src="images/lt_index_header_3.png" alt="">
+    <ul class="navs">
+        <li><a href="index.html">首页</a></li><li>|</li>
+        <li><a href="news.html">新闻</a></li><li>|</li>
+        <li><a href="about_us.html">公司简介</a></li><li>|</li>
+        <li><a href="new_details.html">VR视频</a></li><li>|</li>
+        <li><a href="lt_details.html">全景图片</a></li><li>|</li>
+    </ul>
+    <ul class="login">
+        <li>登陆</li>
+        <li>注册</li>
+    </ul>
+</div>
+    <div id="content">
+        <div id="address">
+            当前位置：<a href="index.html">首页</a>><a href="news.html">新闻</a>><span>2015全景视频案例SHOWREEL</span>
+        </div>
+        <div id="news_details_title">
+            AIR360CHINA - 2015全景视频案例SHOWREEL
+        </div>
+        <div id="news_details_smalltitle">
+            <span>ADMIN</span><span>2015年9月17日</span><span>NO COMMENTS</span>
+        </div>
+        <div id="newsdet_pic">
+            <img src="images/news_details.jpg" alt="">
+        </div>
+        <div id="new_details_vedio_out">
+            <video id="new_details_vedio" poster="images/lt_footer_3.png" width="980"height="500"controls><!--可以设置为自动播放autoplay属性-->
+                <source src="vedios/1.mp4" type="video/mp4"></source>
+                <source src="vedios/1.flv" type="video/flv"></source>
+                您的浏览器不支持video标签。
+
+            </video>
+            <div id="video_control">
+                <div class="video_btn" id="video_begin"><img src="images/news_details_1.jpg" alt=""></div>
+                <div class="video_btn" id="video_times">
+                    <div id="video_past"><span>0</span>:<span>00</span></div>
+                    <div id="video_time_tiao">
+                        <div id="video_tiao_past">
+                            <div id="video_point"></div>
+                        </div>
+                    </div>
+                    <div id="video_last">-<span>0</span>:<span>00</span></div>
+                </div>
+                <div class="video_btn" id="video_all_time"></div>
+                <div class="video_btn" id="video_last_time"></div>
+                <div class="video_btn" id="video_sets"><img src="images/news_details_2.jpg" alt=""></div>
+                <div class="video_btn" id="video_list"><img src="images/news_details_3.jpg" alt=""></div>
+                <div class="video_btn" id="video_biggist"><img src="images/news_details_4.jpg" alt=""></div>
+                <div class="video_btn" id="video_other"><img src="images/news_details_5.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <p id="new_details_vedio_sm">视频说明：Air360china - 2015全景视频案例混剪 Showreel</p>
+        <div id="newdet_about">
+            AIR360CHINA项目将不断为用户呈现出更多更震撼的空中全景照片，甚至是空中全景视频。<br><br>
+            在微信公众号中搜索“空中全景”或“air360china”点击关注，就可以
+            了解到我们更多的作品。<br><br>
+            手机请扫描微信二维码：关注我们
+        </div>
+        <div id="newdet_up_down_btn">
+            <p><a href="#">上一篇：坝上草原全景航拍 - AIR360CHINA</a></p>
+            <p><a href="#">上一篇：坝上草原全景航拍 - AIR360CHINA</a></p>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="footer_content">
+            <div class="footer_log">
+                <img src="images/lt_footer_1.png" alt="">
+                <img src="images/lt_footer_2.png" alt="">
+                <ul>
+                    <li>兰</li>
+                    <li>|</li>
+                    <li>亭</li>
+                    <li>|</li>
+                    <li>数</li>
+                    <li>|</li>
+                    <li>字</li>
+                </ul>
+            </div>
+            <div class="footer_contents">
+                <div class="phone_num footer_details">联系我们<br><span>400-668-9569</span></div>
+                <div class="erweima footer_details"><img src="images/lt_footer_3.png" alt=""></div>
+                <div class="address footer_details"><span>北京兰亭数字科技有限公司</span>
+                    <div class="fangkuai"></div>EMAIL:BD@AIR360CHINA.COM<br><div class="fangkuai"></div>地址：北京市大兴区西红门CDD创意港 <br>&nbsp;&nbsp;&nbsp;嘉悦广场6号楼1002室
+                </div>
+                <div style="clear: both;"></div>
+                <p>Copyright @ 2015 Air360China | Theme by: Theme Horse | Powered by: WordPress</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/my_videos.js"></script>
+</body>
+</html>

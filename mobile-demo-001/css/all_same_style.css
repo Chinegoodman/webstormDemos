@@ -1,0 +1,10 @@
+html{
+    font-size: 20px;
+    /*background-color: black;*/
+}
+body{
+    margin:0 auto;
+    width:18.75rem;
+    height:33.35rem;
+    background-color: #F0F0F0;
+}

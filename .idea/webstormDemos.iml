@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/Desktop/十跖-服务器版" />
+    <content url="file://C:/wamp/www" />
+    <content url="file://E:/zhugeshequ" />
+    <content url="file://H:/06-36_12.29" />
+    <content url="file://H:/10zhi_2017-1-3" />
+    <content url="file://H:/10zhi_fuwuqiban-17.01.07" />
+    <content url="file://H:/12-30" />
+    <content url="file://H:/2016-12-self" />
+    <content url="file://H:/2016-12-self_new" />
+    <content url="file://H:/APP_pages" />
+    <content url="file://H:/JUSHI_work_BOX" />
+    <content url="file://H:/activities_company" />
+    <content url="file://H:/company_pages" />
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://H:/初版草稿new_Company_pages" />
+    <content url="file://H:/官网-初版草稿二" />
+    <content url="file://H:/直播管理平台" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

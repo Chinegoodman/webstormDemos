@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>全聚德</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quanjude.css">
+    <script src="js/jq.js"></script>
+    <script>
+        window.onload=function () {
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+            window.onresize=function () {
+                document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+            };
+        }
+    </script>
+</head>
+<body>
+<div id="top">
+    <div class="top_title">
+        <a href="index.html"><img src="images/common_nav_icon_return_black.png" alt=""></a>
+        <p>全聚德</p>
+    </div>
+    <div id="activity_hs_video_box">
+        <video  webkit-playsinline src="videos/1.mp4"  allowscriptaccess="always" id="activity_hs_video" width="auto" height="100%" poster="activity_img/beautifulpic.jpg">
+            <!--  <source src="videos/1.mp4" type="video/mp4">
+              <source src="videos/1.flv" type="video/flv">
+              对不起，您的浏览器不支持video播放。-->
+        </video>
+        <div class="activity_video_controls">
+            <div class="video_btns play_pause_btn"><img src="activity_img/play_pause_btn.png" alt=""></div>
+            <div class="video_btns current_time"><span>0</span>:<span>00</span></div>
+            <div class="video_btns video_wrap">
+                <div class="pasttime_show">
+                    <div class="time_point"></div>
+                </div>
+            </div>
+            <div class="video_btns video_lasttime"><span>0</span>:<span>00</span></div>
+            <div class="video_btns voice_btn"><img src="activity_img/voice.png" alt=""></div>
+        </div>
+    </div>
+    <div class="video_abouts">
+        <a href=""><img src="images/home_icon_comment_d.png" alt=""></a><p><span>359</span>条总评论</p>
+        <ul class="video_details_share">
+            <li class="video_details1"><img src="images/home_icon_play_d.png" alt="观看人数"><span>466</span></li>
+            <li class="video_details2"><img src="images/home_icon_collect_d.png" alt="收藏人数"><span>255</span></li>
+            <li class="video_details3"><img src="images/common_icon_faward_n.png" alt="分享一下"></li>
+        </ul>
+    </div>
+</div>
+<div id="contents">
+    <div class="qjd_duck_making_text">
+        <img src="images/logo_quanjude.png" alt="">
+        <div class="quanjude_title">
+            <p>全聚德</p>
+            <span>中华著名老字号“全聚德”</span>
+        </div>
+        <img onclick="newpage();" class="quanjude_details" src="images/common_icon_enter.png" alt="">
+    </div>
+    <div class="perfect_videos">
+        <div class="perfect_videos_ul_box">
+            <!--<ul class="perfect_videos_lis">
+                <li><a href=""><img src="images/caipin1.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/caipin2.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/caipin3.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/caipin4.jpg" alt=""></a></li>
+            </ul>-->
+            <!--去除原有的a标签，应该可以防止安卓端的跳转现象-->
+            <ul class="perfect_videos_lis">
+                <li><img src="images/caipin1.jpg" alt="全聚德烤鸭"></li>
+                <li><img src="images/caipin2.jpg" alt="全局的人才"></li>
+                <li><img src="images/caipin3.jpg" alt="全聚德生产线"></li>
+                <li><img src="images/caipin4.jpg" alt="全聚德产业线"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_comment">
+        <img src="images/quanjude_bottom.png" alt="">
+        <img src="images/quanjude_bottom.png" alt="">
+        <img src="images/quanjude_bottom.png" alt="">
+    </div>
+</div>
+<!--<div id="footer"></div>-->
+</body>
+<script src="js/activity.js"></script>
+</html>

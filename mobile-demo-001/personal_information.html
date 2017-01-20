@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all_same_style.css">
+    <link rel="stylesheet" href="css/personal_information.css">
+    <script src="js/jq.js"></script>
+    <script>
+        window.onload=function () {
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+            window.onresize=function () {
+                document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+            };
+        }
+
+    </script>
+</head>
+<body>
+    <div id="top">
+        <div class="person_btn">
+            <a href="index.html"><img src="images/home_icon_sidebar.png" alt=""></a>
+        </div>
+        <ul class="top_navs">
+            个人资料
+        </ul>
+    </div>
+    <div class="personal_informations">
+        <ul class="per_inf_lis">
+            <li>头像 <img src="images/login_logo.png" alt=""></li>
+            <li>昵称 <span>用户昵称</span></li>
+            <!--sex_cod为1表示性别为女。为0则表示为男-->
+            <li>性别 <div class="per_inf_sex" sex_cod=1>男女 <div class="sex_hover"></div></div></li>
+            <li>地址管理 <span>北京市朝阳区</span></li>
+        </ul>
+    </div>
+    <div class="personal_infor_logout">退出登录</div>
+    <!--退出登录提示框-->
+    <div class="personal_infor_logout_confirm per_alert_same_style hide_xiaoguo">
+        <p>退出账号</p>
+        <span>是否确认退出账号</span>
+        <ul>
+            <li>取消</li>
+            <li>确认</li>
+        </ul>
+    </div>
+    <!--修改昵称提示框-->
+    <div class="personal_infor_nickname_change per_alert_same_style hide_xiaoguo">
+        <p>昵称</p>
+        <input type="text" placeholder="输入1~10个字符，设为昵称" pattern=":^[a-zA-Z0-9]{1,10}$">
+        <ul>
+            <li>取消</li>
+            <li>确认</li>
+        </ul>
+    </div>
+    <!--修改地址提示框-->
+    <div class="personal_infor_address_change per_alert_same_style hide_xiaoguo">
+        <p>修改地址</p>
+        <textarea name="" id="personal_change_address" placeholder="输入您的地址包含省市区街道及门牌号"></textarea>
+        <ul>
+            <li>取消</li>
+            <li>确认</li>
+        </ul>
+    </div>
+
+    <!--提示框出现时的灰色层-->
+    <div class="whilealert hide_xiaoguo"></div>
+    <script src="js/personal_infor.js"></script>
+</body>
+</html>

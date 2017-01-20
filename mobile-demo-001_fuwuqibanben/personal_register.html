@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all_same_style.css">
+    <link rel="stylesheet" href="css/personal_register.css">
+    <script src="js/jq.js"></script>
+    <script>
+        window.onload=function () {
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px';
+        }
+        window.onresize=function () {
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px';
+        }
+    </script>
+</head>
+<body>
+    <p class="per_regis_top"><a href="personal_login.html"><img src="images/login_icon_nav_back@3x.png" alt=""></a></p>
+    <p class="per_regis_logo"><img src="images/login_logo.png" alt=""></p>
+    <form class="per_regis_contents" action="" type="post" action="">
+
+        <ul class="per_register_lis">
+            <li><img src="images/login_icon_mobile@3x.png" alt=""><input type="text" placeholder="请输入手机号"></li>
+            <li><img src="images/login_icon_verification code@3x.png" alt="">
+                <input type="text" placeholder="请输入验证码">
+                <div class="per_regis_same_btn per_regis_yzm_btn">获取</div>
+            </li>
+            <li><img src="images/login_icon_code@3x.png" alt=""><input type="text" placeholder="请输入6~20位密码">
+                <div class="per_regis_same_btn per_regis_ycmm_btn">隐藏密码</div>
+            </li>
+        </ul>
+        <div class="per_register_agreement_confirm">
+            <img src="images/register_auto.jpg" alt=""><span>我已阅读并同意 <a href="">《透明工场用户服务协议》</a></span>
+        </div>
+        <div class="per_regis_submit">
+            注册
+            <input class="per_regis_submit_truth" type="submit" value="">
+        </div>
+
+        <!--<input type="reset" value="重置">-->
+    </form>
+    <script src="js/personal_register.js"></script>
+</body>
+</html>

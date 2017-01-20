@@ -1,0 +1,82 @@
+body{
+    position: relative;
+}
+#personal_center{
+    position: fixed;
+    /*left:0;*/
+    left:-15.5rem;
+    top:0;
+    width:15.5rem;
+    height:36.35rem;
+    background-color: #F6F6F6;
+}
+.pc_show{
+    display: block;
+}
+.pc_hide{
+    display: none;
+}
+.pc_top {
+    padding-top: 3.5rem;
+    width: 15.5rem;
+    height: 6.05rem;
+    background-color: #EBEBEB;
+    position: relative;
+}
+.display_photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 auto 0.85rem;
+}
+.display_photo a img{
+    width:3rem;
+    height:3rem;
+}
+.pc_top p{
+    text-align: center;
+    font-size: 0.85rem;
+    color: #262626;
+    line-height:1.2rem;
+}
+.pc_lis{
+    padding:1.85rem 0 0 2rem;
+}
+.pc_lis ul{
+
+}
+.pc_lis ul li{
+    height:0.95rem;
+    line-height:0.95rem;
+    margin-bottom: 1.4rem;
+}
+.pc_lis ul li a{
+    display: block;
+    height:0.95rem;
+    overflow: hidden;
+}
+.pc_lis ul li a img{
+    width:0.95rem;
+    height:0.95rem;
+    margin-right: 0.75rem;
+    display: inline-block;
+    float: left;
+}
+.pc_lis ul li a span{
+    display: inline-block;
+    line-height:0.95rem;
+    font-size: 0.7rem;
+    color: #262626;
+    float: left;
+}
+.personal_center_back{
+    width:0.8rem;
+    height:0.55rem;
+    position: absolute;
+    right:-1.35rem;
+    top:1.6rem;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    display: none;
+}

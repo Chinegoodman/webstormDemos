@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放模拟窗口</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/myvideo.css">
+</head>
+<body>
+
+    <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div>
+    <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div>
+    <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div>
+
+    <div id="activity_hs_video_box">
+        <video  webkit-playsinline src="videos/1.mp4"  allowscriptaccess="always" id="activity_hs_video" width="auto" height="100%" poster="activity_img/beautifulpic.jpg">
+            <!--  <source src="videos/1.mp4" type="video/mp4">
+              <source src="videos/1.flv" type="video/flv">
+              对不起，您的浏览器不支持video播放。-->
+        </video>
+        <div class="activity_video_controls">
+            <div class="video_btns play_pause_btn"><img src="activity_img/play_pause_btn.png" alt=""></div>
+            <div class="video_btns current_time"><span>0</span>:<span>00</span></div>
+            <div class="video_btns video_wrap">
+                <div class="pasttime_show">
+                    <div class="time_point"></div>
+                </div>
+            </div>
+            <div class="video_btns video_lasttime"><span>0</span>:<span>00</span></div>
+            <div class="video_btns voice_btn"><img src="activity_img/voice.png" alt=""></div>
+        </div>
+    </div>
+
+    <div>空</div> <div>空</div> <div>空</div> <div>空</div>
+    <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div> <div>空</div>
+
+    <script src="js/myvideo.js"></script>
+</body>
+</html>

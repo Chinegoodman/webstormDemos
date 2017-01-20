@@ -1,0 +1,17 @@
+
+body{
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.title{
+    height:58px;
+    padding:10px 0 6px;
+    border-top: 2px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    background: url("../images/static-20161011-assets-img-breadcrumbs.png") repeat;
+}
+.title_content{
+
+}

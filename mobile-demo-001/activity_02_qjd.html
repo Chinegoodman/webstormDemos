@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>全聚德给你会员专享</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/activity_02_qjd.css">
+    <script src="js/jq.js"></script>
+</head>
+<body>
+<div id="top">
+    <div class="tops">
+        <a href="index.html"><</a>
+        <p>全聚德给你会员专享</p>
+    </div>
+</div>
+<div id="contents">
+    <div id="content">
+        <img src='activity_img/02_01.png' alt="">
+        <a id ="huiyuan" href="#huiyuan"><img src="activity_img/02_02.png" alt=""></a>
+        <ul id="cai_list">
+            <li><a class="cai1" href="yarouruan"><img src="activity_img/02_03.png" alt=""></a></li>
+            <li><a class="cai2" href="yarouruan"><img src="activity_img/02_04.png" alt=""></a></li>
+            <li><a class="cai3" href="yarouruan"><img src="activity_img/02_05.png" alt=""></a></li>
+            <li><a class="cai4" href="yarouruan"><img src="activity_img/02_06.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div id="activity_hs_video_box">
+        <video  webkit-playsinline src="videos/1.mp4"  allowscriptaccess="always" id="activity_hs_video" width="auto" height="100%" poster="activity_img/beautifulpic.jpg">
+            <!--  <source src="videos/1.mp4" type="video/mp4">
+              <source src="videos/1.flv" type="video/flv">
+              对不起，您的浏览器不支持video播放。-->
+        </video>
+        <div class="activity_video_controls">
+            <div class="video_btns play_pause_btn"><img src="activity_img/play_pause_btn.png" alt=""></div>
+            <div class="video_btns current_time"><span>0</span>:<span>00</span></div>
+            <div class="video_btns video_wrap">
+                <div class="pasttime_show">
+                    <div class="time_point"></div>
+                </div>
+            </div>
+            <div class="video_btns video_lasttime"><span>0</span>:<span>00</span></div>
+            <div class="video_btns voice_btn"><img src="activity_img/voice.png" alt=""></div>
+        </div>
+    </div>
+    <div id="footer">
+        <img src="activity_img/02_footer.png" alt="">
+    </div>
+</div>
+</body>
+<script>
+    window.onload=function () {
+        document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+        window.onresize=function () {
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/18.75+'px'
+        };
+    }
+
+</script>
+<script src="js/activity_02_qjd.js"></script>
+</html>

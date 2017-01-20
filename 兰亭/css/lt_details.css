@@ -1,0 +1,352 @@
+body{
+    width:1920px;
+    /*min-width:1920px;*/
+    height:auto;
+}
+.header{
+    height:38px;
+    line-height:38px;
+    background-color: #000;
+    padding-left: 12px;
+    position: relative;
+}
+.header img:nth-child(1){
+    width:29px;
+    height:18px;
+    margin: 10px 0px;
+}
+.header img:nth-child(2){
+    width: 32px;
+    height:22px;
+    margin:8px 8px 8px 13px;
+}
+.header img:nth-child(3){
+    width: 138px;
+    height:16px;
+    margin:11px 0px 10px 0px;
+}
+.navs {
+    width: 376px;
+    overflow: hidden;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left:1373px;
+
+    overflow: hidden;
+}
+.navs li{
+
+    float: left;
+}
+.navs li a{
+    cursor: pointer;
+    color:#878787;
+}
+.navs li a:hover{
+    background-color: #c03e92;
+    color: #fff;
+}
+.navs li:nth-child(odd){
+    padding:0 11px;
+}
+.login{
+    position: absolute;
+    right:14px;
+    top:10px;
+    overflow: hidden;
+    width:109px;
+    height:22px;
+    line-height:22px;
+}
+.login li {
+    float: left;
+    background-color: #c9c9c9;
+    color: #5f5f5f;
+    width: 53px;
+    height:22px;
+    text-align: center;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 11px;
+}
+.login li:hover{
+    background-color: #c03e92;
+    color: #fff;
+}
+.login li:nth-child(1){
+    margin-right: 3px;
+}
+/*头部样式结束*/
+/*中间内容开始*/
+body{
+    background-color: #ebebeb;
+}
+#content{
+    background-color: #ebebeb;
+    width:1642px;
+    margin:0 auto;
+}
+#lt_top_video{
+    width:1642px;
+    height:982px;
+    margin:0 auto 21px;
+}
+
+#content_dowm{
+    overflow: hidden;
+}
+#video_owner_leave_message{
+    width:1268px;
+    float: left;
+}
+#video_owner{
+    padding:8px 10px 22px 9px;
+    width:1248px;
+    height:216px;
+    /*overflow: hidden;*/
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 15px;
+}
+.vidoe_btns{
+    width:71px;
+    height:37px;
+    margin-right: 4px;
+    float: left;
+    display: inline-block;
+    background-color: #e7e7e7;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.vidoe_btns:hover{
+    background-color: #c03e92;
+}
+#owner_pics_share{
+    position: absolute;
+    right:1px;
+    top:8px;
+    overflow: hidden;
+}
+#owner_pics_share li{
+    float: left;
+    margin-right: 9px;
+}
+
+#owner_details>img,#owner_details_headers{
+    display: inline-block;
+}
+#owner_details_headers{
+    margin-left: 9px;
+    font-size: 11px;
+    color: #989898;
+}
+#owner_details_headers p{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+#owner_details_headers>span{
+    color: #c03e92;
+}
+#owner_details>p{
+    line-height: 50px;
+    font-size: 15px;
+    
+}
+#owner_details>p span{
+    color: #c03e92;
+}
+#owner_details>span{
+    font-size: 16px;
+}
+#lt_owner_more{
+    position: absolute;
+    display: block;
+    left:9px;
+    bottom:22px;
+    text-align: center;
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+#video_leavemessage{
+    padding: 22px 14px 29px 9px;
+    text-indent: 17px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+}
+#video_leavemessage .empty_border{
+    border:none;
+    border-top: 2px solid #dcdcdc;
+    margin-top: 19px;
+    width:100%;
+    height:19px;
+}
+#lt_details_leave_message{
+    width:1208px;
+    height:98px;
+    border:1px solid #c1c1c1;
+    border-bottom:2px solid #c1c1c1;
+}
+#leavemessage_btn{
+    width:147px;
+    height:37px;
+    line-height:37px;
+    text-align: center;
+    background-color: #c03e92;
+    color: #fff;
+    cursor: pointer;
+    text-indent: 0;
+    margin-top: 16px;
+}
+#vidoe_owner_list{
+    float: left;
+    margin-left: 31px;
+    width:343px;
+    margin-bottom: 47px;
+}
+#vidoe_owner_list .video_owners{
+    width:337px;
+    height:139px;
+    border:3px solid #fff;
+    border-bottom:5px solid #fff;
+}
+#vidoe_owner_list .video_owners>img{
+    width:337px;
+    height:98px;
+}
+.lt_details_lists_xinxi{
+    height:34px;
+    margin-top: 3px;
+    margin-left: 6px;
+    overflow: hidden;
+}
+.lt_details_lists_xinxi>img{
+    border-radius: 50%;
+    margin-right: 8px;
+    float: left;
+}
+.lt_details_lists_xinxi_1{
+    color: #868686;
+    font-size: 11px;
+    float: left;
+}
+.lt_details_lists_xinxi_1 P{
+    color: #000;
+    font-size: 12px;
+    line-height: 18px;
+}
+.lt_details_lists_xinxi_1 span{
+    color: #c03e92;
+}
+/*中间内容结束*/
+/*底部开始*/
+.footer{
+    height:280px;
+    width :100%;
+    background-color: #000;
+    color: #fff;
+}
+.footer_content{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+.footer_log {
+    width: 100%;
+    height:129px;
+    border-bottom: 1px solid #7b7b7b;
+    position: relative;
+}
+.footer_log img:nth-child(1){
+    position: absolute;
+    left:317px;
+    top:27px;
+}
+.footer_log img:nth-child(2){
+    position: absolute;
+    left:432px;
+    top:33px;
+}
+.footer_content ul{
+    position: absolute;
+    left:453px;
+    top: 68px;
+    overflow: hidden;
+}
+.footer_content ul li{
+    float: left;
+    font-size: 26px;
+    line-height:28px;
+    color: #fdfdfd;
+    font-weight:bolder;
+}
+.footer_content ul li:nth-child(even){
+    margin:0 18px 0 15px;
+}
+.footer_contents{
+    width: 550px;
+    height: 112px;
+    margin:24px auto 14px;
+    position: relative;
+}
+.footer_details{
+    float: left;
+}
+.phone_num{
+    width:174px;
+    height:39px;
+    margin-top: 13px;
+    text-align: right;
+    font-size: 13px;
+    color: #f6f6f6;
+}
+.phone_num span{
+    font-size: 21px;
+    color: #fff;
+}
+.erweima{
+    width: 119px;
+    height:64px;
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    position: relative;
+    margin-left: 21px;
+    margin-right: 18px;
+}
+.erweima img{
+    position: absolute;
+    left:21px;
+    top:-8px;
+}
+.address{
+    text-indent: 9px;
+    font-size: 11px;
+    color: #b6b5b5;
+}
+.address span:nth-child(1){
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    width:auto;
+    height:14px;
+    margin-bottom: 10px;
+}
+.address .fangkuai{
+    width:4px;
+    height:4px;
+    border:0px;
+    background-color: #ddd;
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer_contents p {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}

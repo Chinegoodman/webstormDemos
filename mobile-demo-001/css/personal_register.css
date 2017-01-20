@@ -1,0 +1,129 @@
+.per_regis_top{
+    margin: 1.63rem 0 0 0.48rem;
+    width:0.8rem;
+    height:0.8rem;
+    overflow: hidden;
+}
+.per_regis_top a img{
+    width:0.8rem;
+    height:0.8rem;
+}
+/*
+头部结束*/
+.per_regis_contents{
+    width:15.75rem;
+    margin:0 auto 0.5rem;
+}
+.per_regis_logo{
+    width:3rem;
+    height:3rem;
+    margin:1.82rem auto 3.45rem;
+    border-radius: 50%;
+}
+.per_regis_logo img{
+    width:3rem;
+    height:3rem;
+}
+.per_register_lis{
+    width:15.75rem;
+
+}
+.per_register_lis li{
+    height:1.3rem;
+    line-height: 1.3rem;
+    margin-top: 0.85rem;
+    overflow: hidden;
+    padding-bottom: 0.35rem;
+    border-bottom: 0.05rem solid #D8D8D8;
+    vertical-align: bottom;
+}
+.per_register_lis li:nth-child(1){
+    height:1.4rem;
+    margin-top: 0;
+    line-height:1.4rem;
+    vertical-align: middle;
+}
+.per_register_lis li img,.per_register_lis li input,.per_regis_same_btn{
+    float: left;
+}
+.per_register_lis li img:nth-child(1){
+    width:0.6rem;
+    height:1.05rem;
+    margin:0 0.9rem 0.25rem;
+}
+.per_register_lis li img:nth-child(2){
+    width:0.73rem;
+    height:0.825rem;
+    margin:0 0.82rem 0.2rem;
+}
+.per_register_lis li img:nth-child(3){
+    width:0.8rem;
+    height:0.955rem;
+    margin:0 0.8rem 0.15rem;
+}
+.per_register_lis li input{
+    height:1.2rem;
+    width:10rem;
+    line-height:1.2rem;
+    font-size: 0.7rem;
+    color: #484848;
+    border:0 transparent;
+    background-color: transparent;
+}
+.per_regis_same_btn{
+    width:3rem;
+    height:1.3rem;
+    border:0.05rem solid #979797;
+    border-radius: 0.2rem;
+    background-color: #F8F8F8;
+    color: #484848;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.per_register_agreement_confirm{
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+.per_register_agreement_confirm img{
+    width:0.55rem;
+    height:0.6rem;
+    float: left;
+    margin-right:0.25rem;
+    line-height: 0.8rem;
+}
+.per_register_agreement_confirm span{
+    float: left;
+    font-size: 0.55rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    color: #AEAEAE;
+}
+.per_register_agreement_confirm span a{
+    color: #828282;
+}
+.per_regis_submit{
+    width:100%;
+    height:1.65rem;
+    background-color: #B3B3B3;
+    color: #fff;
+    font-size: 0.7rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    line-height: 1.65rem;
+    margin-top: 2.5rem;
+}
+.per_regis_submit_truth{
+    width:100%;
+    height:1.65rem;
+    background-color: transparent;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -moz-opacity: 0;
+    outline:none medium;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 15;
+}

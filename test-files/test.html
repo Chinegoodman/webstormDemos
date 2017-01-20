@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试一下啊</title>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <script src="zepto/zepto.js"></script>
+    <script src="zepto/event.js"></script>
+    <script src="zepto/touch.js"></script>
+
+    <style>
+        .delete {
+            display: none;
+            color: red;
+        }
+        #tests div{
+            width:50%;
+            height:20px;
+            margin-bottom: 3px;
+            background-color: deepskyblue;
+            text-align: center;
+        }
+    </style>
+
+    <ul id=items>
+        <li>List item 1 <span class=delete>DELETE</span></li>
+        <li>List item 2 <span class=delete>DELETE</span></li>
+        <li>List item 3 <span class=delete>DELETE</span></li>
+        <li>List item 4 <span class=delete>DELETE</span></li>
+    </ul>
+    <div id="tests">
+        <div id="up">向上划</div>
+        <div id="down">向下划</div>
+        <div id="left">向左划</div>
+        <div id="right">向右划</div>
+    </div>
+    <script>
+        $('#items li').swipe(function(){
+            $('.delete').hide()
+            $('.delete', this).show()
+        })
+
+        $('.delete').tap(function(){
+            $(this).parent('li').remove()
+        })
+        $('#up').swipeUp(function () {
+            $('#items').hide();
+            /*$('#items').remove();*/
+        })
+        $('#left').swipeLeft(function () {
+            $(this).css({marginLeft:'10px'})
+        })
+        $('#right').swipeRight(function () {
+            $(this).css({marginLeft:'15px'})
+        })
+        $('#down').swipeDown(function () {
+            /*$('#items').hide();*/
+            $('#down').remove();
+        })
+        $('#tests').longTap(function () {
+            $(this).css({backgroundColor:'blue'});
+        })
+        $('#tests').doubleTap(function () {
+            $(this).css({backgroundColor:'black'});
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+body{
+    position: relative;
+}
+#top{
+    height: 1.6rem;
+    padding: 1.6rem 0.55rem 0;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #B2B2B2;
+}
+.person_btn ,.top_navs{
+    float: left;
+}
+.person_btn{
+    width:0.8rem;
+    height:0.55rem;
+}
+.person_btn img{
+    width:0.8rem;
+    height:0.55rem;
+}
+.top_navs{
+    margin-left: 7.075rem;
+    color: #212121;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+}
+/*头部结束*/
+/*个人信息*/
+.personal_informations{
+    margin-top: 1rem;
+    padding:0 1.5rem;
+}
+.per_inf_lis li{
+    padding-bottom: 0.35rem;
+    border-bottom:0.05rem solid #D8D8D8;
+    font-size: 0.7rem;
+    color: #484848;
+    margin-bottom: 1.15rem;
+}
+.per_inf_lis li span{
+    color: #767676;
+}
+.per_inf_lis li>img{
+    width:1.5rem;
+    height:1.5rem;
+    float: right;
+}
+.per_inf_lis li:nth-child(1){
+    height:1.7rem;
+    line-height:1.7rem;
+    padding-bottom: 0.2rem;
+}
+.per_inf_lis li span{
+    float: right;
+}
+.per_inf_sex{
+    float: right;
+    font-size: 0.6rem;
+    color: #fff;
+    width:2.62rem;
+    padding-left: 0.5rem;
+    height:1.3rem;
+    background-color: #8DB231;
+    line-height: 1.3rem;
+    text-align: center;
+    letter-spacing: 0.6rem;
+    position: relative;
+    border-radius: 0.2rem;
+}
+.per_inf_lis li:nth-child(3){
+    height:1.3rem;
+    line-height:1.3rem;
+}
+.sex_hover{
+    width:1.4rem;
+    height:1.3rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    left:-0.05rem;
+    top:-0.02rem;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.personal_infor_logout{
+    width:15.75rem;
+    height:1.65rem;
+    line-height:1.65rem;
+    margin: 15.3rem auto 0;
+    background-color: #E63C2F;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    border-radius: 0.35rem;
+    text-align: center;
+    -webkit-box-shadow: 0 0.3rem 0.3rem rgba(230,60,47,0.55) ;
+    -moz-box-shadow: 0 0.3rem 0.3rem rgba(230,60,47,0.55) ;
+    box-shadow: 0 0.3rem 0.3rem rgba(230,60,47,0.55) ;
+}
+
+/*退出账号弹出确认信息*/
+.per_alert_same_style{
+    position: absolute;
+    left:2.9rem;
+    top:13.2rem;
+    width:13rem;
+    height:5.05rem;
+    padding-top: 0.95rem;
+    background-color: rgba(255,255,255,0.95);
+    z-index: 10;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+/*弹出提示时的底层样式*/
+.whilealert{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 5;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+}
+.per_alert_same_style p {
+    height: 1.05rem;
+    line-height: 1.05rem;
+    font-size: 0.75rem;
+    color: #484848;
+    margin-bottom: 0.15rem;
+}
+.per_alert_same_style span{
+    line-height:0.85rem;
+    font-size: 0.6rem;
+    color: #484848;
+}
+.per_alert_same_style ul{
+    margin-top: 0.75rem;
+    border-top: 0.05rem solid #D8D8D8;
+    overflow: hidden;
+}
+.per_alert_same_style ul li{
+    float: left;
+    color: #348FFC;
+    font-size: 0.75rem;
+    width:6.47rem;
+    height:2.2rem;
+    line-height:2.2rem;
+}
+.per_alert_same_style ul li:nth-child(1){
+    border-right: 0.05rem solid #D8D8D8;
+}
+/*元素消失类*/
+.hide_xiaoguo{
+    display: none;
+}
+/*
+昵称修改*/
+.personal_infor_nickname_change{
+    height:5.55rem;
+}
+.personal_infor_nickname_change p{
+    margin-bottom: 0;
+}
+.personal_infor_nickname_change input{
+    margin-top: 0.45rem;
+    width:11.65rem;
+    height:1.15rem;
+    padding-left: 0.45rem;
+    font-size: 0.6rem;
+    line-height: 1.15rem;
+    color: #868686;
+    border:0.1rem solid rgba(187,187,187,0.3);
+}
+.personal_infor_nickname_change ul{
+    margin-top: 0.45rem;
+}
+ /*
+ 地址修改 */
+.personal_infor_address_change{
+    height:7.55rem;
+}
+.personal_infor_address_change p{
+    margin-bottom: 0.45rem;
+}
+#personal_change_address{
+    width:10.89rem;
+    height:2.69rem;
+    margin:0 auto;
+    border:0.03rem solid #BBBBBB;
+    font-size: 0.6rem;
+    color: #868686;
+    padding:0.25rem 0.45rem;
+}
+.personal_infor_address_change ul{
+    margin-top: 0.35rem;
+}

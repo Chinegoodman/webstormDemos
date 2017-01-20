@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域测试</title>
+</head>
+<body>
+<script>
+    window.onload=function(){
+        var a=123,b=456;
+        function ff(){
+            a=a+7;
+            alert(a);
+        };
+        ff();
+        function vf(){
+            alert(a);
+        };
+        vf();
+    };
+</script>
+</body>
+</html>

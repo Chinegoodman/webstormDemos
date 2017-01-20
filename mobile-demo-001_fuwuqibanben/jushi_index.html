@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>巨石直播web版</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all_same_style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="top">
+        <div class="person_btn">
+            <img src="images/home_icon_sidebar.png" alt="">
+        </div>
+        <ul class="top_navs">
+            <li class="nav_select top_nav">最热</li>
+            <li class="top_nav">推荐</li>
+            <li class="top_nav">直播</li>
+        </ul>
+    </div>
+    <div id="containerer">
+        <div class="hot_zhibo">
+            <img src="images/home_jietu_live.jpg" alt="">
+            <div class="hot_zhibo_tag">
+                <img src="images/home_tag_live.png" alt="">
+            </div>
+            <div class="hot_zhibo_shangjia_name">
+                <img src="images/logo_quanjude.png" alt=""><span>|</span><span>全聚德烤鸭上桌记</span>
+                <p>一炉百年的火，铸成了“全聚德”，<span>天下第一楼，美名遍中国。</span></p>
+            </div>
+            <div class="home_icons">
+                <a href="#"><span>466</span></a>
+                <a href="#"><span>35</span></a>
+                <a href="#"><span>255</span></a>
+            </div>
+        </div>
+        <div class="hot_yuyue">
+            <img src="images/home_jietu_live.jpg" alt="">
+            <div class="hot_zhibo_tag">
+                <img src="images/home_tag_bespeak.png" alt="">
+            </div>
+            <div class="hot_zhibo_shangjia_name">
+                <img src="images/logo_quanjude.png" alt=""><span>|</span><span>稻香村全过程制作参观预约</span>
+                <p>“一畦春韭熟，十里稻花香”</p>
+            </div>
+            <div class="home_icons">
+                <a href="#"><span>466</span></a>
+                <a href="#"><span>35</span></a>
+                <a href="#"><span>255</span></a>
+            </div>
+        </div>
+        <div class="hot_yuyue hot_huodong">
+            <img src="images/home_jietu_live.jpg" alt="">
+            <div class="hot_zhibo_tag">
+                <img src="images/home_tag_bespeak.png" alt="">
+            </div>
+            <div class="hot_zhibo_shangjia_name">
+                <img src="images/logo_quanjude.png" alt=""><span>|</span><span>稻香村全过程制作参观预约</span>
+                <p>“一畦春韭熟，十里稻花香”</p>
+            </div>
+            <div class="home_icons">
+                <a href="#"><span>466</span></a>
+                <a href="#"><span>35</span></a>
+                <a href="#"><span>255</span></a>
+            </div>
+        </div>
+        <div class="hot_yuyue hot_zhuanti">
+            <img src="images/home_jietu_live.jpg" alt="">
+            <div class="hot_zhibo_tag">
+                <img src="images/home_tag_bespeak.png" alt="">
+            </div>
+            <div class="hot_zhibo_shangjia_name">
+                <img src="images/logo_quanjude.png" alt=""><span>|</span><span>稻香村全过程制作参观预约</span>
+                <p>“一畦春韭熟，十里稻花香”</p>
+            </div>
+            <div class="home_icons">
+                <a href="#"><span>466</span></a>
+                <a href="#"><span>35</span></a>
+                <a href="#"><span>255</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+   <!-- 自适应设置字体大小：方法一-->
+<!--<script>
+    /*对浏览器窗口监听，设置基本字号*/
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4  < 50 ? 50 : document.documentElement.clientWidth / 6.4 + 'px';
+    window.onresize = function(){
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4  < 50 ? 50 : document.documentElement.clientWidth / 6.4 + 'px';
+    }
+
+
+    /*6.4是根据设计稿640px/100的来的，
+     实时当前屏幕除以6.4后，
+     全局元素尺寸就按1rem就等于100px来设计
+     实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+     */
+    console.log(document.documentElement.style.fontSize);
+</script>-->
+    <script>
+        /*对浏览器窗口监听，设置基本字号*/
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75  < 17.067 ? 50 : document.documentElement.clientWidth / 18.75 + 'px';
+        window.onresize = function(){
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75  < 17.067 ? 50 : document.documentElement.clientWidth / 18.75 + 'px';
+        }
+
+
+        /*6.4是根据设计稿640px/100的来的，
+         实时当前屏幕除以6.4后，
+         全局元素尺寸就按1rem就等于100px来设计
+         实时当前屏幕除以6.4后 < 50 表示是最小屏幕320px
+         */
+        console.log(document.documentElement.style.fontSize);
+    </script>
+
+
+    <!-- 自适应设置字体大小：方法二-->
+    <!--<script>
+    //自动适应屏幕
+    window.onresize=function(){
+    resetFont();
+    }
+    function resetFont(){
+    var HTML=document.getElementsByTagName('html')[0];
+    var ww=document.documentElement.clientWidth;
+    var scale=ww/640;//640为pds图的宽度
+    HTML.style.fontSize=100*scale+'px';
+    }
+    resetFont();
+    </script>-->
+    <!--<script>
+        //自动适应屏幕
+        window.onresize=function(){
+            resetFont();
+        }
+        function resetFont(){
+            var HTML=document.getElementsByTagName('html')[0];
+            var ww=document.documentElement.clientWidth;
+            var scale=ww/375;//640为pds图的宽度
+            HTML.style.fontSize=20*scale+'px';
+        }
+        resetFont();
+    </script>-->
+</body>
+</html>

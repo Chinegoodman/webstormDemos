@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <style>
+        #box1{width: 410px; height: 402px; background: url(bg1.png) 0 0 repeat-x; overflow: hidden; position: relative;}
+        #con1{width: 400px; position: absolute; top: 0px; left: 0px; padding: 5px;}
+        #box2{width: 400px; height: 400px; padding: 5px; position: absolute; top: 50px; left: 600px; border: 1px solid #000; overflow: hidden; overflow-y: scroll;}
+        #outer{width: 30px; height: 402px; background: url(bg1.png) 0 0 no-repeat; position: absolute; top: 8px; left: 418px;}
+        #inner{width: 30px; height: 53px; position: absolute; top: 0px; left: 0px; background: url(icon2.png) 0 0 no-repeat;}
+    </style>
+    <script>
+        window.onload=function (){
+
+
+
+            var outer=document.getElementById('outer');
+            var inner=document.getElementById('inner');
+            var box1=document.getElementById('box1');
+            var con1=document.getElementById('con1');
+            inner.onmousedown=function (ev){
+                var e=ev||window.event;
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else{
+                    e.returnValue=false;
+                };
+                var d_bky=e.clientY-outer.offsetTop-inner.offsetTop;
+
+                document.onmousemove=function (ev){
+                    var e=ev||window.event;
+                    // alert(d_bky);
+                    var top=e.clientY-outer.offsetTop-d_bky;
+                    if (top<=0) {
+                        top=0;
+                    }else if(top>=outer.offsetHeight-inner.offsetHeight){
+                        top=outer.offsetHeight-inner.offsetHeight;
+                    };
+                    inner.style.top=top+'px';
+                    var top2=0;
+                    var scale=top/(outer.offsetHeight-inner.offsetHeight);
+                    top2=scale*(con1.offsetHeight-box1.offsetHeight);
+                    con1.style.top=-top2+'px';
+                }
+                document.onmouseup=function (){
+                    document.onmousemove=null;
+                }
+            }
+
+            var str=window.navigator.userAgent.toLowerCase();
+
+            var aaa=5
+            if (aaa>=7){
+                jiantinggunlun();
+            }else {
+
+            }
+            function jiantinggunlun(){
+                if (str.indexOf('firefox')!=-1) {
+                    box1.addEventListener('DOMMouseScroll',function (e){
+                        e.preventDefault();
+                        if (e.detail<0) {
+                            var top3=con1.offsetTop+40;
+                            if (top3>=0) {
+                                top3=0;
+                            };
+                            var scale=top3/(con1.offsetHeight-box1.offsetHeight);
+                            var top4=scale*(outer.offsetHeight-inner.offsetHeight);
+                            con1.style.top=top3+'px';
+                            inner.style.top=-top4+'px';
+                        }else{
+                            var top3=con1.offsetTop-40;
+                            if (top3<=-(con1.offsetHeight-box1.offsetHeight)){
+                                top3=-(con1.offsetHeight-box1.offsetHeight);
+                            };
+                            var scale=top3/(con1.offsetHeight-box1.offsetHeight);
+                            var top4=scale*(outer.offsetHeight-inner.offsetHeight);
+                            con1.style.top=top3+'px';
+                            inner.style.top=-top4+'px';
+                        }
+                    },false);
+                }else{
+                    box1.onmousewheel=function (ev){
+                        var e=ev||window.event;
+                        if (e.preventDefault) {
+                            e.preventDefault();
+                        } else{
+                            e.returnValue=false;
+                        };
+                        if (e.wheelDelta>0) {
+                            var top3=con1.offsetTop+40;
+                            if (top3>=0) {
+                                top3=0;
+                            };
+                            var scale=top3/(con1.offsetHeight-box1.offsetHeight);
+                            var top4=scale*(outer.offsetHeight-inner.offsetHeight);
+                            con1.style.top=top3+'px';
+                            inner.style.top=-top4+'px';
+                        }else{
+                            var top3=con1.offsetTop-40;
+                            if (top3<=-(con1.offsetHeight-box1.offsetHeight)){
+                                top3=-(con1.offsetHeight-box1.offsetHeight);
+                            };
+                            var scale=top3/(con1.offsetHeight-box1.offsetHeight);
+                            var top4=scale*(outer.offsetHeight-inner.offsetHeight);
+                            con1.style.top=top3+'px';
+                            inner.style.top=-top4+'px';
+                        }
+                    };
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<div id="outer">
+    <div id="inner"></div>
+</div>
+<div id="box1">
+    <div id="con1">
+        原标题：奥巴马为何形容“中国像800磅大猩猩”？
+
+        “中国在亚太像一只800磅的大猩猩。”此话最近出自奥巴马之口。据侨报网2月23日报道，一国总统说别国像大猩猩？先不用惊讶，这句话其实是一句美国俚语。不过，美国政客在谈到中国时，十分爱用。
+
+        据路透社报道，2月22日，奥巴马在白宫与州长们见面。会上有人就中国的铁矿石出口提出担忧。奥巴马回应称：“他们（中国）知道，他们不能将出口驱动的增长模式永远持续下去，但改变需要时间，现在他们很想通过卖一大堆国家补贴产品到美国市场来解决短期问题。我们已经很清楚地告诉他们，事实就是这是行不通的，而且我们将会动用工具来保证它行不通。”
+
+        奥巴马还呼吁各州州长向国会施压，要求国会通过泛太平洋伙伴关系协定（TPP），以促进美国向亚太地区的出口。奥巴马说：“我们在那里（亚太）的关切是，中国就像一只800磅的大猩猩。如果我们允许他们设定那里的贸易规则，美国企业和美国工人就会被排除在外。”
+
+        大猩猩？奥巴马要在卸任前最后一年里走川普的路线，来一回“最后的疯狂”？其实不然，这句话放在中文语境里是挺耸人听闻的。不过在美国，“800磅的大猩猩”（800-pound gorilla）只是一句美式俚语。原标题：奥巴马为何形容“中国像800磅大猩猩”？
+
+        “中国在亚太像一只800磅的大猩猩。”此话最近出自奥巴马之口。据侨报网2月23日报道，一国总统说别国像大猩猩？先不用惊讶，这句话其实是一句美国俚语。不过，美国政客在谈到中国时，十分爱用。
+
+        据路透社报道，2月22日，奥巴马在白宫与州长们见面。会上有人就中国的铁矿石出口提出担忧。奥巴马回应称：“他们（中国）知道，他们不能将出口驱动的增长模式永远持续下去，但改变需要时间，现在他们很想通过卖一大堆国家补贴产品到美国市场来解决短期问题。我们已经很清楚地告诉他们，事实就是这是行不通的，而且我们将会动用工具来保证它行不通。”
+
+        奥巴马还呼吁各州州长向国会施压，要求国会通过泛太平洋伙伴关系协定（TPP），以促进美国向亚太地区的出口。奥巴马说：“我们在那里（亚太）的关切是，中国就像一只800磅的大猩猩。如果我们允许他们设定那里的贸易规则，美国企业和美国工人就会被排除在外。”
+
+        大猩猩？奥巴马要在卸任前最后一年里走川普的路线，来一回“最后的疯狂”？其实不然，这句话放在中文语境里是挺耸人听闻的。不过在美国，“800磅的大猩猩”（800-pound gorilla）只是一句美式俚语
+        原标题：奥巴马为何形容“中国像800磅大猩猩”？
+    </div>
+</div>
+<div id="box2">
+    <div id="con2">
+        原标题：奥巴马为何形容“中国像800磅大猩猩”？
+
+        “中国在亚太像一只800磅的大猩猩。”此话最近出自奥巴马之口。据侨报网2月23日报道，一国总统说别国像大猩猩？先不用惊讶，这句话其实是一句美国俚语。不过，美国政客在谈到中国时，十分爱用。
+
+        据路透社报道，2月22日，奥巴马在白宫与州长们见面。会上有人就中国的铁矿石出口提出担忧。奥巴马回应称：“他们（中国）知道，他们不能将出口驱动的增长模式永远持续下去，但改变需要时间，现在他们很想通过卖一大堆国家补贴产品到美国市场来解决短期问题。我们已经很清楚地告诉他们，事实就是这是行不通的，而且我们将会动用工具来保证它行不通。”
+
+        奥巴马还呼吁各州州长向国会施压，要求国会通过泛太平洋伙伴关系协定（TPP），以促进美国向亚太地区的出口。奥巴马说：“我们在那里（亚太）的关切是，中国就像一只800磅的大猩猩。如果我们允许他们设定那里的贸易规则，美国企业和美国工人就会被排除在外。”
+
+        大猩猩？奥巴马要在卸任前最后一年里走川普的路线，来一回“最后的疯狂”？其实不然，这句话放在中文语境里是挺耸人听闻的。不过在美国，“800磅的大猩猩”（800-pound gorilla）只是一句美式俚语。原标题：奥巴马为何形容“中国像800磅大猩猩”？
+
+        “中国在亚太像一只800磅的大猩猩。”此话最近出自奥巴马之口。据侨报网2月23日报道，一国总统说别国像大猩猩？先不用惊讶，这句话其实是一句美国俚语。不过，美国政客在谈到中国时，十分爱用。
+
+        据路透社报道，2月22日，奥巴马在白宫与州长们见面。会上有人就中国的铁矿石出口提出担忧。奥巴马回应称：“他们（中国）知道，他们不能将出口驱动的增长模式永远持续下去，但改变需要时间，现在他们很想通过卖一大堆国家补贴产品到美国市场来解决短期问题。我们已经很清楚地告诉他们，事实就是这是行不通的，而且我们将会动用工具来保证它行不通。”
+
+        奥巴马还呼吁各州州长向国会施压，要求国会通过泛太平洋伙伴关系协定（TPP），以促进美国向亚太地区的出口。奥巴马说：“我们在那里（亚太）的关切是，中国就像一只800磅的大猩猩。如果我们允许他们设定那里的贸易规则，美国企业和美国工人就会被排除在外。”
+
+        大猩猩？奥巴马要在卸任前最后一年里走川普的路线，来一回“最后的疯狂”？其实不然，这句话放在中文语境里是挺耸人听闻的。不过在美国，“800磅的大猩猩”（800-pound gorilla）只是一句美式俚语
+        原标题：奥巴马为何形容“中国像800磅大猩猩”？
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>
